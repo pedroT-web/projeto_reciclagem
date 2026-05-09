@@ -1,0 +1,911 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
+
+@font-face {
+    font-family: "nunito";
+    src: url(../font/Nunito-VariableFont_wght.ttf);
+}
+
+:root {
+    --color-principal: rgb(0, 75, 141);
+    --color-secundaria: #F7941E;
+}
+
+
+
+body {
+
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+
+.pagina_inicial {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 90vh;
+}
+
+.btn-close {
+    color: white !important;
+}
+
+.cabecalho {
+    height: 50px;
+    width: 100%;
+    background-color: #024e24;
+
+    display: flex;
+    justify-content: center;
+
+    align-items: center;
+
+}
+
+.paginas_header {
+    list-style: none;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 0;
+    margin: 0;
+}
+
+.itens_header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.botao_cadastro {
+    color: white !important;
+    background-color: #024e24 !important;
+    border: none;
+}
+
+.botoes_header {
+    text-decoration: none;
+    color: #ffffff;
+
+    font-size: 18px;
+    font-family: "nunito";
+    margin-left: 30px;
+}
+
+.botoes_header:hover {
+    color: #99CD85;
+}
+
+.botoes_header_2 {
+    text-decoration: none;
+    color: #ffffff;
+
+    font-size: 18px;
+    font-family: "nunito";
+    margin-left: 30px;
+}
+
+.botoes_header_2:hover {
+    color: #99CD85;
+}
+
+.icone_de_login,
+.icone_de_login_2 {
+    font-size: 40px;
+    color: #ffff;
+
+    margin-right: 30px;
+    transition: 0.2s;
+}
+
+.icone_sair {
+    font-size: 40px;
+    color: #ffff;
+
+    margin-right: 30px;
+}
+
+.icone_sair:hover {
+    transition: 0.2s;
+    color: #99CD85;
+}
+
+.container_imagen {
+    height: 500px;
+    width: 600px;
+
+    margin-top: 50px;
+    background-image: url(../img/logoReciclagem.png);
+    background-size: cover;
+    background-position: top;
+}
+
+.container_itens_pag_inicial {
+    margin-top: 0;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.container_itens_pag_inicial>h1 {
+    font-family: "nunito";
+    font-size: 48px;
+    font-weight: 800;
+    color: #006f3e;
+}
+
+.container_itens_pag_inicial>h3 {
+    font-family: "nunito";
+    font-size: 48px;
+    font-weight: 800;
+    color: rgba(0, 75, 141, 0.43);
+    color: rgb(0, 111, 62, 0.43);
+}
+
+.pagina_de_pesagem {
+    height: 100vh;
+}
+
+.lista_peso {
+    background-color: #F7941E !important;
+    color: white !important;
+}
+
+.espacamento_input {
+    padding-top: 50px;
+    justify-content: center;
+    gap: 40px;
+}
+
+#input_material {
+    margin-bottom: 40px;
+}
+
+#tipo_material {
+    margin-top: 15px;
+}
+
+
+#select_funcionario,
+#select_material,
+#selectStatus,
+#input_data {
+    font-family: "nunito";
+    border: 1px solid rgba(34, 36, 38, .15);
+
+    height: 50px;
+    width: 100%;
+    border-radius: 5px;
+
+    background-color: #fff;
+    color: black;
+}
+
+.container_data {
+    margin-bottom: 100px !important;
+}
+
+
+#nome::placeholder {
+    color: black;
+    font-family: "nunito";
+}
+
+.container_peso {
+    display: flex;
+    align-items: center;
+}
+
+.ui.labeled.input>.label:not(.corner) {
+    display: flex;
+    align-items: center;
+}
+
+input:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+
+    scale: 1.02;
+}
+
+.historico_pagina_pesagem {
+    margin-top: 30px;
+    color: white;
+
+    height: 100vh;
+
+    text-align: center;
+
+    border-radius: 15px;
+    margin-left: 100px;
+}
+
+.ui.buttons .botoes {
+    color: white !important;
+    background-color: #072f54f3 !important;
+}
+
+.ui.buttons .botoes:hover {
+    color: #072f54f3 !important;
+    background-color: white !important;
+    border: 2px solid #072f54f3 !important;
+}
+
+.tabela_historico_rapido {
+    max-height: 400px;
+}
+
+.ui.table thead th {
+    background-color: #008048 !important;
+    color: white !important;
+
+    font-family: "nunito";
+    font-size: 18px;
+}
+
+.itens_tabela {
+    color: #072f54f3 !important;
+    background-color: #f2f2f2 !important;
+
+    font-family: "nunito";
+    font-size: 16px;
+}
+
+.itens_tabela_segundo {
+    font-size: 16px;
+    font-family: "nunito";
+    color: white !important;
+    background-color: #faa53e !important;
+
+    font-family: "nunito";
+}
+
+
+label {
+    color: black;
+    font-family: "nunito";
+}
+
+select {
+    appearance: none;
+    background-color: #f2f2f2;
+    border: 1px solid black;
+    padding: 8px;
+    border-radius: 5px;
+    color: black;
+    width: 200px;
+}
+
+
+.botao_enviar {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    height: 50px;
+    width: 150px;
+}
+
+
+.campo_botao_enviar {
+    display: flex;
+    justify-content: end;
+
+    /* margin: 50px 20px 0px 50px; */
+}
+
+.titulo {
+    color: #006f3e;
+}
+
+.listas {
+    width: 100% !important;
+}
+
+.corpo_tabel_diaria {
+    max-height: 400px;
+}
+
+.texto_enviar {
+    color: white;
+    padding: 20px 55px 20px 55px;
+    background-color: #01693c !important;
+    color: #f2f2f2 !important;
+    transition: 0.3s !important;
+    border-radius: 10px;
+    color: white;
+    border: 1px solid #01693c;
+}
+
+.texto_enviar:hover {
+    color: white;
+    transition: 0.3s;
+    background-color: #008048 !important;
+    border: 1px solid #008048;
+    scale: 1.02;
+}
+
+.input_de_peso {
+    border-radius: 0 0 0 0;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    height: 60px;
+}
+
+.menu {
+    background-color: #F7941E;
+    border: none;
+    border-radius: 0 0 0 0 !important;
+    color: white;
+    appearance: none;
+    padding: 8px;
+    border-bottom-right-radius: 5px !important;
+    border-top-right-radius: 5px !important;
+    width: 70px;
+    height: 58px;
+    font-size: 16px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+.pag_de_login {
+    height: 90vh;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fundo_login {
+    height: 520px;
+    width: 600px;
+
+    border-radius: 15px;
+
+    background-color: var(--color-principal);
+    box-shadow: 1px 1px 20px 7px rgba(0, 75, 141, 0.43);
+    transition: 0.5s;
+}
+
+.container_login {
+    display: flex;
+    justify-content: center;
+}
+
+.fundo_login>h4 {
+    color: white;
+    font-family: "nunito";
+    font-size: 20px;
+    margin-top: 15px;
+    text-align: center;
+}
+
+.titulo_tabelas{
+    color: #006f3e !important;
+}
+
+.fundo_login>h5 {
+    padding: 10px 10px 10px 10px;
+    color: white;
+    font-family: "nunito";
+    font-size: 14px;
+    margin-top: 5px;
+    text-align: center;
+}
+
+.titulo_login {
+    color: #f2f2f2;
+    font-size: 20px;
+}
+
+.email {
+    margin-top: 30px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.senha {
+    margin-top: 40px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.email>div,
+.senha>div {
+    margin-top: 10px;
+    width: 100%;
+}
+
+.container_senha {
+    position: relative;
+    display: flex;
+}
+
+.container_nova_senha {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    display: flex;
+}
+
+.input_login {
+    z-index: 0 !important;
+}
+
+#visualizarSenha {
+    position: absolute;
+    top: 50%;
+    right: 12px;
+    transform: translateY(-50%);
+
+    cursor: pointer;
+    z-index: 2;
+    background: none;
+    border: none;
+
+}
+
+#visualizar_nova_senha,
+#visualizar_senha_atual,
+#visualizar_confirmar_senha,
+#visualizarConfirmarSenhaCadastro,
+#visualizarSenhaCadastro {
+    position: absolute;
+    top: 50%;
+    right: 12px;
+    transform: translateY(10%);
+    color: #a0a0a0 !important;
+
+    cursor: pointer;
+    z-index: 2;
+    background: none;
+    border: none;
+}
+
+#olho,
+#nova_senha_olho,
+#conf_senha_olho {
+    color: rgb(160, 160, 160);
+}
+
+.icone_de_login_2:hover {
+    color: white;
+}
+
+.icone_de_login:hover {
+    color: #99CD85;
+}
+
+.campo_redefinir_senha {
+    margin-top: 20px;
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.campo_redefinir_senha>.esqueceu_senha,
+.cadastrar {
+    display: flex;
+    justify-content: end;
+}
+
+
+.esqueceu_senha {
+    color: white;
+    font-size: 16px;
+    gap: 5px;
+}
+
+.link_cadastro,
+.link_redefinicao {
+    text-decoration: none;
+    color: var(--color-secundaria);
+    cursor: pointer;
+}
+
+.esqueceu_senha>a:hover,
+.cadastrar>a:hover {
+    color: white;
+    transition: 0.2s;
+}
+
+.cadastrar {
+    color: white;
+    font-size: 16px;
+    gap: 5px;
+}
+
+.espacamento_enviar {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+}
+
+.botao_login {
+    text-decoration: none;
+    color: var(--color-secundaria);
+    background-color: #f2f2f2;
+    padding: 15px 70px 15px 70px;
+    border: 1px solid #F7941E;
+    border-radius: 10px;
+    margin-top: 20px;
+
+    transition: 0.2s;
+}
+
+.botao_login:hover {
+    transition: 0.2s;
+    color: #f2f2f2;
+    background-color: var(--color-secundaria);
+}
+
+
+.pag_historico {
+    height: 110vh;
+}
+
+.agrupamento_historico {
+    min-height: 100%;
+    width: 100%;
+
+    padding: 40px;
+    margin: 0;
+
+}
+
+.tabela_historicos {
+    border-radius: 10px !important;
+
+}
+
+.acoes {
+    display: felx;
+    justify-content: space-between;
+    align-items: center;
+
+    cursor: pointer;
+}
+
+.botao_deletar,
+.botao_edicao {
+    text-decoration: none;
+    font-size: 20px !important;
+}
+
+.botao_deletar {
+    color: red;
+}
+
+.botao_edicao {
+    color: var(--color-secundaria);
+    margin-left: 10px;
+}
+
+
+.local_historico {
+    margin: 50px 20px 0px 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 15px;
+    gap: 30px;
+
+    height: 85%;
+    width: 95%;
+}
+
+.espacamento_historico {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.botoes_acesso_historico {
+    height: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.botao_relatorio,
+.deletar_periodo {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: start !important;
+
+    height: 50px;
+    width: 200px;
+
+    margin: 0;
+}
+
+.botao_enviar_relatorio {
+    width: 200px;
+
+    background-color: #01693c;
+
+    border: none;
+    transition: 0.5s;
+    padding: 12px;
+}
+
+.botao_enviar_relatorio:hover {
+    background-color: #009957;
+    transition: 0.5s;
+}
+
+.botao_deletar_periodo {
+    width: 200px;
+
+    background-color: rgb(201, 25, 25);
+
+    border: none;
+    transition: 0.5s;
+    padding: 12px;
+}
+
+.botao_deletar_periodo:hover {
+    background-color: rgb(148, 1, 1);
+    transition: 0.5s;
+}
+
+.input_periodo {
+    color: white !important;
+    background-color: #F7941E !important;
+    border: none;
+    border-radius: 10px !important;
+    width: 200px;
+    padding: 10px;
+}
+
+.input_periodo:hover {
+    color: #F7941E !important;
+    background-color: white !important;
+    border: 2px solid #F7941E !important;
+}
+
+.container_label_inicio,
+.container_label_fim {
+    display: flex;
+    align-items: center;
+}
+
+.label_periodo_inicio,
+.label_periodo_fim {
+    color: #072F54;
+    font-size: 26px;
+}
+
+.botao_gerar_historico {
+    text-decoration: none;
+    height: 40px;
+
+    background-color: #01693c;
+    color: white;
+
+    border-radius: 7px;
+    padding: 9px;
+    border: none;
+    transition: 0.5s;
+}
+
+.botao_gerar_historico:hover {
+    background-color: white;
+    background-color: #009957;
+    transition: 0.5s;
+}
+
+
+.ui.modal {
+    background: rgba(0, 0, 0, 0.0) !important;
+    border-radius: 15px !important;
+}
+
+.header_redefinicao,
+.header_cadastro {
+    display: flex !important;
+    justify-content: center !important;
+
+    color: white !important;
+
+    border-top-left-radius: 15px !important;
+    border-top-right-radius: 15px !important;
+}
+
+.redefinicao_senha,
+.cadastro {
+    color: white !important;
+
+    padding-left: 50px !important;
+    padding-right: 50px !important;
+
+}
+
+.redefinicao_senha>h5,
+.cadastro>h5 {
+    font-size: 20px;
+}
+
+.conteudo_modal {
+    background-color: rgba(9, 69, 121, 1) !important;
+}
+
+#fechar_botao,
+#fechar_botao_redefinicao {
+    height: 40px;
+    width: 100px;
+    font-size: 18px;
+    border-radius: 7px;
+    background-color: red;
+    border: 2px solid red;
+    color: white;
+
+
+    transition: 0.2s;
+
+
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+
+#fechar_botao:hover,
+#fechar_botao_redefinicao:hover {
+
+    border: 2px solid white;
+
+    color: white;
+    background-color: rgba(9, 69, 121, 1);
+
+}
+
+#salvar_senha,
+#salvar_nova_senha,
+#cad_func {
+    height: 40px;
+    width: 100px;
+    font-size: 18px;
+    border-radius: 7px;
+    border: 2px solid #F7941E;
+    margin-left: 10px;
+
+    color: white;
+    background-color: #F7941E;
+
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+#salvar_senha:hover,
+#salvar_nova_senha:hover {
+
+    border: 2px solid white;
+
+    color: white;
+    background-color: rgba(9, 69, 121, 1);
+
+
+    transition: 0.2s;
+}
+
+.forms_redefinicao,
+.forms_cadastro_funcionario {
+    width: 100%;
+    height: 40px;
+    border-radius: 7px;
+    margin-top: 5px;
+
+    background-color: #f2f2f2;
+    border: none;
+    padding: 10px;
+    padding-left: 20px;
+}
+
+.titulos_forms {
+    margin-top: 15px;
+}
+
+.modais_cadastro {
+    cursor: pointer;
+}
+
+
+
+.erro {
+    border: 2px solid #f16c79;
+    box-shadow: 0 0 8px #dc3545;
+    /* box-shadow: 0 0 8px #f16c79; */
+}
+
+
+@media screen and (max-width: 768px) {
+    .container_imagen {
+        width: 100%;
+        background-position: left;
+
+        height: 400px;
+    }
+
+    .espacamento_input {
+        margin-left: 20px;
+    }
+
+    .cabecalho {
+        width: 100vw;
+    }
+
+    .historico_pagina_pesagem>.botoes {
+        margin-left: 50px;
+        width: 100%;
+    }
+
+    .historico_pagina_pesagem {
+        margin: 0;
+        margin-left: 10px;
+        margin-right: 20px;
+        width: 95%;
+    }
+
+    .botao_enviar {
+        margin-bottom: 50px !important;
+    }
+
+    .fundo_login {
+        width: 400px;
+        height: 520px;
+    }
+
+
+
+    .local_historico {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .input_periodo {
+        width: 150px;
+    }
+
+    .botao_gerar_historico {
+        height: 70px;
+    }
+}
+
+@media screen and (min-width:769px) and (max-width: 1199px) {
+    .container_imagen {
+        width: 100%;
+        background-position: left;
+    }
+
+    .historico_pagina_pesagem {
+
+        margin-left: 50px;
+        margin-right: 50px;
+        width: 93%;
+    }
+
+    .local_historico {
+        margin-left: 0;
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .container_imagen {
+        width: 100%;
+        background-position: left;
+    }
+}

@@ -1,0 +1,32 @@
+.secaoCadastros {
+    width: 100%;
+    height: 100%;
+}
+
+.tabela_funcionarios,
+.tabela_materiais {
+    margin-top: 100px;
+    margin-bottom: 80px;
+    max-height: 80%;
+    min-width: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.tabela_funcionarios thead tr,
+.tabela_materiais thead tr {
+    position: sticky;
+    
+    top: 0;
+    z-index: 10;
+}
+
+.acoes_gerenciamento {
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: space-between !important;
+}
+
+.titulo_teblas{
+    color: #072F54;;
+}
