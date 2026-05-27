@@ -718,46 +718,6 @@ VALUES (
 -- --------------------------------------------------------
 
 --
--- Estrutura para tabela `historico_anual`
---
-
-CREATE TABLE `historico_anual` (
-    `id_ano` int(11) NOT NULL,
-    `id_mes_anual` int(11) DEFAULT NULL,
-    `ano` int(4) DEFAULT NULL,
-    `soma_materias_anual` decimal(10, 0) DEFAULT NULL
-) ENGINE = InnoDB DEFAULT CHARSET = utf8mb4 COLLATE = utf8mb4_general_ci;
-
--- --------------------------------------------------------
-
---
--- Estrutura para tabela `historico_diario`
---
-
-CREATE TABLE `historico_diario` (
-    `id_data_diaria` int(11) NOT NULL,
-    `id_cadastro_diario` int(11) DEFAULT NULL,
-    `data` date DEFAULT NULL,
-    `soma_materiais` decimal(10, 5) DEFAULT NULL
-) ENGINE = InnoDB DEFAULT CHARSET = utf8mb4 COLLATE = utf8mb4_general_ci;
-
--- --------------------------------------------------------
-
---
--- Estrutura para tabela `historico_mensal`
---
-
-CREATE TABLE `historico_mensal` (
-    `id_mes` int(11) NOT NULL,
-    `id_cadastros_mensal` int(11) DEFAULT NULL,
-    `id_meses` int(11) DEFAULT NULL,
-    `mes` int(11) DEFAULT NULL,
-    `soma_materiais_mensal` decimal(20, 5) DEFAULT NULL
-) ENGINE = InnoDB DEFAULT CHARSET = utf8mb4 COLLATE = utf8mb4_general_ci;
-
--- --------------------------------------------------------
-
---
 -- Estrutura para tabela `login_administrador`
 --
 
@@ -1788,36 +1748,6 @@ CREATE TABLE `materiais` (
 -- --------------------------------------------------------
 
 --
--- Estrutura para tabela `meses`
---
-
-CREATE TABLE `meses` (
-    `id_do_mes` int(11) NOT NULL,
-    `nome_do_mes` varchar(255) DEFAULT NULL
-) ENGINE = InnoDB DEFAULT CHARSET = utf8mb4 COLLATE = utf8mb4_general_ci;
-
---
--- Despejando dados para a tabela `meses`
---
-
-INSERT INTO
-    `meses` (`id_do_mes`, `nome_do_mes`)
-VALUES (1, 'Janeiro'),
-    (2, 'Fevereiro'),
-    (3, 'Março'),
-    (4, 'Abril'),
-    (5, 'Maio'),
-    (6, 'Junho'),
-    (7, 'Julho'),
-    (8, 'Agosto'),
-    (9, 'Setembro'),
-    (10, 'Outubro'),
-    (11, 'Novembro'),
-    (12, 'Dezembro');
-
--- --------------------------------------------------------
-
---
 -- Estrutura para tabela `tb_funcionarios`
 --
 
@@ -1827,61 +1757,11 @@ CREATE TABLE `tb_funcionarios` (
 ) ENGINE = InnoDB DEFAULT CHARSET = utf8mb4 COLLATE = utf8mb4_general_ci;
 
 --
--- Despejando dados para a tabela `tb_funcionarios`
---
-
-INSERT INTO
-    `tb_funcionarios` (
-        `id_funcionario`,
-        `nome_do_funcionario`
-    )
-VALUES (1, 'Claudete Maria Gonsalves'),
-    (2, 'Janete De Souza Lima'),
-    (
-        3,
-        'Janete Maria De Farias Barros Da Silva'
-    ),
-    (4, 'Joao De Carvalho'),
-    (
-        5,
-        'Mirian De Souza Dos Santos'
-    ),
-    (6, 'Rosa Maria Moraes'),
-    (7, 'Larissa Roveran Luz');
-
---
--- Índices para tabelas despejadas
---
-
---
 -- Índices de tabela `cadastro_de_peso`
 --
 ALTER TABLE `cadastro_de_peso`
 ADD PRIMARY KEY (`id`),
 ADD KEY `id_funcionarios` (`id_funcionarios`);
-
---
--- Índices de tabela `historico_anual`
---
-ALTER TABLE `historico_anual`
-ADD PRIMARY KEY (`id_ano`),
-ADD KEY `id_mes_anual` (`id_mes_anual`);
-
---
--- Índices de tabela `historico_diario`
---
-ALTER TABLE `historico_diario`
-ADD PRIMARY KEY (`id_data_diaria`),
-ADD KEY `id_cadastro_diario` (`id_cadastro_diario`);
-
---
--- Índices de tabela `historico_mensal`
---
-ALTER TABLE `historico_mensal`
-ADD PRIMARY KEY (`id_mes`),
-ADD KEY `id_cadastros_mensal` (`id_cadastros_mensal`),
-ADD KEY `id_meses` (`id_meses`),
-ADD KEY `mes` (`mes`);
 
 --
 -- Índices de tabela `login_administrador`
@@ -1892,11 +1772,6 @@ ALTER TABLE `login_administrador` ADD PRIMARY KEY (`id`);
 -- Índices de tabela `materiais`
 --
 ALTER TABLE `materiais` ADD PRIMARY KEY (`id`);
-
---
--- Índices de tabela `meses`
---
-ALTER TABLE `meses` ADD PRIMARY KEY (`id_do_mes`);
 
 --
 -- Índices de tabela `tb_funcionarios`

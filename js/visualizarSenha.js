@@ -1,15 +1,16 @@
 function fnVisualisarSenha() {
     const inputSenha = document.getElementById("input_senha")
-    const botaoOlho = document.getElementById("botaoOlho")
+    const botaoOlho = document.getElementById("visualizarSenha")
+    const iconeOlho = document.getElementById("olho")
 
     if (inputSenha.type == "password") {
         inputSenha.type = "text"
-        botaoOlho.classList.remove("bi-eye")
-        botaoOlho.classList.add("bi-eye-slash")
+        iconeOlho.classList.remove("bi-eye")
+        iconeOlho.classList.add("bi-eye-slash")
     } else {
         inputSenha.type = "password"
-        botaoOlho.classList.remove("bi-eye-slash")
-        botaoOlho.classList.add("bi-eye")
+        iconeOlho.classList.remove("bi-eye-slash")
+        iconeOlho.classList.add("bi-eye")
     }
 }
 

@@ -40,7 +40,7 @@ $resultadoConsulta = $preparaSelect->fetchAll();
                     <div class="container_label_fim">
                         <label class="label_periodo_fim me-2">Até: </label><input type="date" id="fim_periodo" name="fim_periodo" class=" input_periodo periodo_fim" value="<?= $dataAtual ?>" max="<?= $dataAtual ?>">
                     </div>
-                    <div>
+                    <div style="display: flex; align-items: center;">
                         <button type="submit" class="botao_gerar_historico">Gerar Historico</button>
                     </div>
                 </form>

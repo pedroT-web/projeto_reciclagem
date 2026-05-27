@@ -33,14 +33,14 @@ include './template/modal-cadastrar.php';
                 <label class="titulo_login mb-1">Senha</label>
                 <div class="container_senha">
                     <input type="password" class="form-control input_login" id="input_senha" name="input_senha" placeholder="Digite a senha" onblur="fnValidarSenha()" required>
-                    <button type="button" id="visualizarSenha" onclick="fnVisualisarSenha()"><i id="olho" class="bi bi-eye fs-3"></i></button>
+                    <button type="button" id="visualizarSenha" onclick="fnVisualisarSenha()" class="oiii"><i id="olho" class="bi bi-eye fs-3"></i></button>
                 </div>
                 <span id="erroSenha"></span>
             </div>
             <div class="campo_redefinir_senha">
-                <label class="esqueceu_senha">
+                <!-- <label class="esqueceu_senha">
                     Esqueceu a senha? <a class="link_redefinicao" data-bs-toggle="modal" data-bs-target="#modalRedefinirSenha">Redefinir</a>
-                </label>
+                </label> -->
                 <!-- <label class="cadastrar">
                     Não tem cadastro? <a class="link_cadastro" data-bs-toggle="modal" data-bs-target="#modalCadastrar">Cadastrar</a>
                 </label> -->

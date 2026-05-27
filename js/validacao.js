@@ -14,22 +14,22 @@ function fnValidarPeso() {
 
     if (peso == "") {
         erroPeso.textContent = "O peso não pode ser vazio"
-        erroPeso.style.color = "#f16c79"
+        erroPeso.style.color = "#e7818b"
         inputPeso.classList.add('erro')
         inputPeso.focus()
     } else if (regexLetras.test(peso)) {
         erroPeso.textContent = "O peso pode conter apenas números"
-        erroPeso.style.color = "#f16c79"
+        erroPeso.style.color = "#e7818b"
         inputPeso.classList.add('erro')
         inputPeso.focus()
     } else if (regexCaracteresEspeciaisNumero.test(peso)) {
         erroPeso.textContent = "O peso pode conter apenas números"
-        erroPeso.style.color = "#f16c79"
+        erroPeso.style.color = "#e7818b"
         inputPeso.classList.add('erro')
         inputPeso.focus()
     } else if (peso <= 0) {
         erroPeso.textContent = "O peso não pode Menor ou igual a 0"
-        erroPeso.style.color = "#f16c79"
+        erroPeso.style.color = "#e7818b"
         inputPeso.classList.add('erro')
         inputPeso.focus()
     } else {
@@ -47,22 +47,22 @@ function fnValidarAtualizacaoPeso() {
 
     if (peso == "") {
         erroNovoPeso.textContent = "O Campo de peso não pode ser vazio"
-        erroNovoPeso.style.color = "#f16c79"
+        erroNovoPeso.style.color = "#e7818b"
         inputNovoPeso.classList.add('erro')
         inputNovoPeso.focus();
     } else if (regexCaracteresEspeciaisNumero.test(peso)) {
         erroNovoPeso.textContent = "O peso não pode conter caracteres especiais"
-        erroNovoPeso.style.color = "#f16c79"
+        erroNovoPeso.style.color = "#e7818b"
         inputNovoPeso.classList.add('erro')
         inputNovoPeso.focus();
     } else if (regexLetras.test(peso)) {
         erroNovoPeso.textContent = "O peso pode conter apenas números"
-        erroNovoPeso.style.color = "#f16c79"
+        erroNovoPeso.style.color = "#e7818b"
         inputNovoPeso.classList.add('erro')
         inputNovoPeso.focus();
     } else if (peso <= 0) {
         erroNovoPeso.textContent = "O peso não pode Menor ou igual a 0"
-        erroNovoPeso.style.color = "#f16c79"
+        erroNovoPeso.style.color = "#e7818b"
         inputNovoPeso.classList.add('erro')
         inputNovoPeso.focus()
     } else {
@@ -71,7 +71,6 @@ function fnValidarAtualizacaoPeso() {
         return true;
     }
 }
-
 
 function fnValidarFuncionario() {
     const selectFuncionario = document.getElementById("select_funcionario")
@@ -100,11 +99,11 @@ function fnValidarData() {
 
     if (data == "") {
         erroData.textContent = "A data não pode estar vazia"
-        erroData.style.color = "#f16c79"
+        erroData.style.color = "#e7818b"
         inputData.classList.add("erro")
     } else if (anoInput < anoAtual) {
         erroData.textContent = "O ano não pode ser anterior"
-        erroData.style.color = "#f16c79"
+        erroData.style.color = "#e7818b"
         inputData.classList.add("erro")
     } else {
         erroData.textContent = ""
@@ -123,11 +122,11 @@ function fnValidarAtualizacaoData() {
 
     if (data == "") {
         erroData.textContent = "A data não pode estar vazia"
-        erroData.style.color = "#f16c79"
+        erroData.style.color = "#e7818b"
         inputData.classList.add("erro")
     } else if (anoInput != anoAtual) {
         erroData.textContent = "O ano não pode ser anterior ou superior"
-        erroData.style.color = "#f16c79"
+        erroData.style.color = "#e7818b"
         inputData.classList.add("erro")
     } else {
         erroData.textContent = ""
@@ -143,19 +142,19 @@ function fnValidarEmail() {
 
     if (email == "") {
         erroEmail.textContent = "O email não pode ser vazio"
-        erroEmail.style.color = "#f16c79"
+        erroEmail.style.color = "#e7818b"
         inputEmail.classList.add("erro")
     } else if (email.length > 100) {
         erroEmail.textContent = "O email pode ter até 100 caracteres"
-        erroEmail.style.color = "#f16c79"
+        erroEmail.style.color = "#e7818b"
         inputEmail.classList.add("erro")
     } else if (email.length < 20) {
         erroEmail.textContent = "O email deve ter no mínimo 20 caracteres"
-        erroEmail.style.color = "#f16c79"
+        erroEmail.style.color = "#e7818b"
         inputEmail.classList.add("erro")
     } else if (!regexEmail.test(email)) {
         erroEmail.textContent = "Email Inválido, deve conter @ e ."
-        erroEmail.style.color = "#f16c79"
+        erroEmail.style.color = "#e7818b"
         inputEmail.classList.add("erro")
     } else {
         erroEmail.textContent = ""
@@ -171,27 +170,27 @@ function fnValidarSenha() {
 
     if (senha == "") {
         erroSenha.textContent = "A senha não pode ser vazia"
-        erroSenha.style.color = "#f16c79"
+        erroSenha.style.color = "#e7818b"
         inputSenha.classList.add("erro")
     } else if (senha.length < 8) {
         erroSenha.textContent = "A senha deve conter no mínimo 8 caracteres"
-        erroSenha.style.color = "#f16c79"
+        erroSenha.style.color = "#e7818b"
         inputSenha.classList.add("erro")
     } else if (senha.length > 60) {
         erroSenha.textContent = "A senha deve conter no máximo 60 caracteres"
-        erroSenha.style.color = "#f16c79"
+        erroSenha.style.color = "#e7818b"
         inputSenha.classList.add("erro")
     } else if (!regexMaiuscula.test(senha)) {
         erroSenha.textContent = "A senha deve conter pelo menos uma letra Maiúscula"
-        erroSenha.style.color = "#f16c79"
+        erroSenha.style.color = "#e7818b"
         inputSenha.classList.add("erro")
     } else if (!regexCaracteresEspeciais.test(senha)) {
         erroSenha.textContent = "A senha deve conter pelo menos um caracter especial"
-        erroSenha.style.color = "#f16c79"
+        erroSenha.style.color = "#e7818b"
         inputSenha.classList.add("erro")
     } else if (!regexNumero.test(senha)) {
         erroSenha.textContent = "A senha deve conter pelo menos um número"
-        erroSenha.style.color = "#f16c79"
+        erroSenha.style.color = "#e7818b"
         inputSenha.classList.add("erro")
     } else {
         erroSenha.textContent = ""
@@ -199,7 +198,6 @@ function fnValidarSenha() {
         return true;
     }
 }
-
 
 function fnValidarCadastroFuncionario() {
     const inputCadFuncionario = document.getElementById('input_nome_func')
@@ -209,32 +207,32 @@ function fnValidarCadastroFuncionario() {
 
     if (cadFuncionario == "") {
         erroCadFuncionario.textContent = "O Nome Não pode ser vazio"
-        erroCadFuncionario.style.color = "#f16c79"
+        erroCadFuncionario.style.color = "#e7818b"
         inputCadFuncionario.classList.add("erro")
         inputCadFuncionario.focus()
     } else if (cadFuncionario.length < 5) {
         erroCadFuncionario.textContent = "Mínimo de 5 caracteres"
-        erroCadFuncionario.style.color = "#f16c79"
+        erroCadFuncionario.style.color = "#e7818b"
         inputCadFuncionario.classList.add("erro")
         inputCadFuncionario.focus()
     } else if (cadFuncionario.length > 80) {
         erroCadFuncionario.textContent = "Máximo de 80 caracteres"
-        erroCadFuncionario.style.color = "#f16c79"
+        erroCadFuncionario.style.color = "#e7818b"
         inputCadFuncionario.classList.add("erro")
         inputCadFuncionario.focus()
     } else if (!espaco.test(cadFuncionario)) {
         erroCadFuncionario.textContent = "É necessário pelo menos 1 espaço"
-        erroCadFuncionario.style.color = "#f16c79"
+        erroCadFuncionario.style.color = "#e7818b"
         inputCadFuncionario.classList.add("erro")
         inputCadFuncionario.focus()
     } else if (regexNumero.test(cadFuncionario)) {
         erroCadFuncionario.textContent = "O Nome Não pode conter números"
-        erroCadFuncionario.style.color = "#f16c79"
+        erroCadFuncionario.style.color = "#e7818b"
         inputCadFuncionario.classList.add("erro")
         inputCadFuncionario.focus()
     } else if (regexCaracteresEspeciais.test(cadFuncionario)) {
         erroCadFuncionario.textContent = "O Nome Não pode conter caracteres especiais"
-        erroCadFuncionario.style.color = "#f16c79"
+        erroCadFuncionario.style.color = "#e7818b"
         inputCadFuncionario.classList.add("erro")
         inputCadFuncionario.focus()
     } else {
@@ -251,32 +249,32 @@ function fnValidarAtualizacaoFuncionario() {
 
     if (edicaoFuncionario == "") {
         erroEdicaoFuncionario.textContent = "O Nome Não pode ser vazio"
-        erroEdicaoFuncionario.style.color = "#f16c79"
+        erroEdicaoFuncionario.style.color = "#e7818b"
         inputEdicaoFuncionario.classList.add("erro")
         inputEdicaoFuncionario.focus()
     } else if (edicaoFuncionario.length < 5) {
         erroEdicaoFuncionario.textContent = "Mínimo de 5 caracteres"
-        erroEdicaoFuncionario.style.color = "#f16c79"
+        erroEdicaoFuncionario.style.color = "#e7818b"
         inputEdicaoFuncionario.classList.add("erro")
         inputEdicaoFuncionario.focus()
     } else if (edicaoFuncionario.length > 80) {
         erroEdicaoFuncionario.textContent = "Máximo de 80 caracteres"
-        erroEdicaoFuncionario.style.color = "#f16c79"
+        erroEdicaoFuncionario.style.color = "#e7818b"
         inputEdicaoFuncionario.classList.add("erro")
         inputEdicaoFuncionario.focus()
     } else if (!espaco.test(edicaoFuncionario)) {
         erroEdicaoFuncionario.textContent = "É necessário pelo menos 1 espaço"
-        erroEdicaoFuncionario.style.color = "#f16c79"
+        erroEdicaoFuncionario.style.color = "#e7818b"
         inputEdicaoFuncionario.classList.add("erro")
         inputEdicaoFuncionario.focus()
     } else if (regexNumero.test(edicaoFuncionario)) {
         erroEdicaoFuncionario.textContent = "O Nome Não pode conter números"
-        erroEdicaoFuncionario.style.color = "#f16c79"
+        erroEdicaoFuncionario.style.color = "#e7818b"
         inputEdicaoFuncionario.classList.add("erro")
         inputEdicaoFuncionario.focus()
     } else if (regexCaracteresEspeciais.test(edicaoFuncionario)) {
         erroEdicaoFuncionario.textContent = "O Nome Não pode conter caracteres especiais"
-        erroEdicaoFuncionario.style.color = "#f16c79"
+        erroEdicaoFuncionario.style.color = "#e7818b"
         inputEdicaoFuncionario.classList.add("erro")
         inputEdicaoFuncionario.focus()
     } else {
@@ -293,19 +291,19 @@ function fnValidarEmailRedefinicao() {
 
     if (emailRedefinicao == "") {
         erroEmailRedefinicao.textContent = "O email não pode ser vazio"
-        erroEmailRedefinicao.style.color = "#f16c79"
+        erroEmailRedefinicao.style.color = "#e7818b"
         inputEmailRedefinicao.classList.add("erro")
     } else if (emailRedefinicao.length > 100) {
         erroEmailRedefinicao.textContent = "O email pode ter até 100 caracteres"
-        erroEmailRedefinicao.style.color = "#f16c79"
+        erroEmailRedefinicao.style.color = "#e7818b"
         inputEmailRedefinicao.classList.add("erro")
     } else if (emailRedefinicao.length < 20) {
         erroEmailRedefinicao.textContent = "O email deve ter no mínimo 20 caracteres"
-        erroEmailRedefinicao.style.color = "#f16c79"
+        erroEmailRedefinicao.style.color = "#e7818b"
         inputEmailRedefinicao.classList.add("erro")
     } else if (!regexEmail.test(emailRedefinicao)) {
         erroEmailRedefinicao.textContent = "Email Inválido, deve conter @ e ."
-        erroEmailRedefinicao.style.color = "#f16c79"
+        erroEmailRedefinicao.style.color = "#e7818b"
         inputEmailRedefinicao.classList.add("erro")
     } else {
         erroEmailRedefinicao.textContent = ""
@@ -322,27 +320,27 @@ function fnValidarSenhaAtualRedefinicao() {
 
     if (senhaRedefinicao == "") {
         erroSenhaRedefinicao.textContent = "A senha não pode ser vazia"
-        erroSenhaRedefinicao.style.color = "#f16c79"
+        erroSenhaRedefinicao.style.color = "#e7818b"
         inputSenhaAtualRedefinicao.classList.add("erro")
     } else if (senhaRedefinicao.length < 8) {
         erroSenhaRedefinicao.textContent = "A senha deve conter no mínimo 8 caracteres"
-        erroSenhaRedefinicao.style.color = "#f16c79"
+        erroSenhaRedefinicao.style.color = "#e7818b"
         inputSenhaAtualRedefinicao.classList.add("erro")
     } else if (senhaRedefinicao.length > 60) {
         erroSenhaRedefinicao.textContent = "A senha deve conter no máximo 60 caracteres"
-        erroSenhaRedefinicao.style.color = "#f16c79"
+        erroSenhaRedefinicao.style.color = "#e7818b"
         inputSenhaAtualRedefinicao.classList.add("erro")
     } else if (!regexMaiuscula.test(senhaRedefinicao)) {
         erroSenhaRedefinicao.textContent = "A senha deve conter pelo menos uma letra Maiúscula"
-        erroSenhaRedefinicao.style.color = "#f16c79"
+        erroSenhaRedefinicao.style.color = "#e7818b"
         inputSenhaAtualRedefinicao.classList.add("erro")
     } else if (!regexCaracteresEspeciais.test(senhaRedefinicao)) {
         erroSenhaRedefinicao.textContent = "A senha deve conter pelo menos um caracter especial"
-        erroSenhaRedefinicao.style.color = "#f16c79"
+        erroSenhaRedefinicao.style.color = "#e7818b"
         inputSenhaAtualRedefinicao.classList.add("erro")
     } else if (!regexNumero.test(senhaRedefinicao)) {
         erroSenhaRedefinicao.textContent = "A senha deve conter pelo menos um número"
-        erroSenhaRedefinicao.style.color = "#f16c79"
+        erroSenhaRedefinicao.style.color = "#e7818b"
         inputSenhaAtualRedefinicao.classList.add("erro")
     } else {
         erroSenhaRedefinicao.textContent = ""
@@ -358,27 +356,27 @@ function fnValidarNovaSenhaRedefinicao() {
 
     if (novaSenhaRedefinicao == "") {
         erroNovaSenhaRedefinicao.textContent = "A senha não pode ser vazia"
-        erroNovaSenhaRedefinicao.style.color = "#f16c79"
+        erroNovaSenhaRedefinicao.style.color = "#e7818b"
         inputNovaSenhaRedefinicao.classList.add("erro")
     } else if (novaSenhaRedefinicao.length < 8) {
         erroNovaSenhaRedefinicao.textContent = "A senha deve conter no mínimo 8 caracteres"
-        erroNovaSenhaRedefinicao.style.color = "#f16c79"
+        erroNovaSenhaRedefinicao.style.color = "#e7818b"
         inputNovaSenhaRedefinicao.classList.add("erro")
     } else if (novaSenhaRedefinicao.length > 60) {
         erroNovaSenhaRedefinicao.textContent = "A senha deve conter no máximo 60 caracteres"
-        erroNovaSenhaRedefinicao.style.color = "#f16c79"
+        erroNovaSenhaRedefinicao.style.color = "#e7818b"
         inputNovaSenhaRedefinicao.classList.add("erro")
     } else if (!regexMaiuscula.test(novaSenhaRedefinicao)) {
         erroNovaSenhaRedefinicao.textContent = "A senha deve conter pelo menos uma letra Maiúscula"
-        erroNovaSenhaRedefinicao.style.color = "#f16c79"
+        erroNovaSenhaRedefinicao.style.color = "#e7818b"
         inputNovaSenhaRedefinicao.classList.add("erro")
     } else if (!regexCaracteresEspeciais.test(novaSenhaRedefinicao)) {
         erroNovaSenhaRedefinicao.textContent = "A senha deve conter pelo menos um caracter especial"
-        erroNovaSenhaRedefinicao.style.color = "#f16c79"
+        erroNovaSenhaRedefinicao.style.color = "#e7818b"
         inputNovaSenhaRedefinicao.classList.add("erro")
     } else if (!regexNumero.test(novaSenhaRedefinicao)) {
         erroNovaSenhaRedefinicao.textContent = "A senha deve conter pelo menos um número"
-        erroNovaSenhaRedefinicao.style.color = "#f16c79"
+        erroNovaSenhaRedefinicao.style.color = "#e7818b"
         inputNovaSenhaRedefinicao.classList.add("erro")
     } else {
         erroNovaSenhaRedefinicao.textContent = ""
@@ -394,27 +392,27 @@ function fnValidarConfirmarSenhaRedefinicao() {
 
     if (confirmarSenhaRedefinicao == "") {
         erroConfirmarSenhaRedefinicao.textContent = "A senha não pode ser vazia"
-        erroConfirmarSenhaRedefinicao.style.color = "#f16c79"
+        erroConfirmarSenhaRedefinicao.style.color = "#e7818b"
         inputConfirmarSenhaRedefinicao.classList.add("erro")
     } else if (confirmarSenhaRedefinicao.length < 8) {
         erroConfirmarSenhaRedefinicao.textContent = "A senha deve conter no mínimo 8 caracteres"
-        erroConfirmarSenhaRedefinicao.style.color = "#f16c79"
+        erroConfirmarSenhaRedefinicao.style.color = "#e7818b"
         inputConfirmarSenhaRedefinicao.classList.add("erro")
     } else if (confirmarSenhaRedefinicao.length > 60) {
         erroConfirmarSenhaRedefinicao.textContent = "A senha deve conter no máximo 60 caracteres"
-        erroConfirmarSenhaRedefinicao.style.color = "#f16c79"
+        erroConfirmarSenhaRedefinicao.style.color = "#e7818b"
         inputConfirmarSenhaRedefinicao.classList.add("erro")
     } else if (!regexMaiuscula.test(confirmarSenhaRedefinicao)) {
         erroConfirmarSenhaRedefinicao.textContent = "A senha deve conter pelo menos uma letra Maiúscula"
-        erroConfirmarSenhaRedefinicao.style.color = "#f16c79"
+        erroConfirmarSenhaRedefinicao.style.color = "#e7818b"
         inputConfirmarSenhaRedefinicao.classList.add("erro")
     } else if (!regexCaracteresEspeciais.test(confirmarSenhaRedefinicao)) {
         erroConfirmarSenhaRedefinicao.textContent = "A senha deve conter pelo menos um caracter especial"
-        erroConfirmarSenhaRedefinicao.style.color = "#f16c79"
+        erroConfirmarSenhaRedefinicao.style.color = "#e7818b"
         inputConfirmarSenhaRedefinicao.classList.add("erro")
     } else if (!regexNumero.test(confirmarSenhaRedefinicao)) {
         erroConfirmarSenhaRedefinicao.textContent = "A senha deve conter pelo menos um número"
-        erroConfirmarSenhaRedefinicao.style.color = "#f16c79"
+        erroConfirmarSenhaRedefinicao.style.color = "#e7818b"
         inputConfirmarSenhaRedefinicao.classList.add("erro")
     } else {
         erroConfirmarSenhaRedefinicao.textContent = ""
@@ -433,7 +431,7 @@ function fnValidarNovaSenha() {
 
     if (novaSenhaValidar != confirmarSenhaValidar) {
         erroConfirmarSenhaRedefinicao.textContent = "As Senha não coincidem, verifique a senha e digite novamente"
-        erroConfirmarSenhaRedefinicao.style.color = "#f16c79"
+        erroConfirmarSenhaRedefinicao.style.color = "#e7818b"
         inputConfirmarSenhaRedefinicao.classList.add("erro")
         inputConfirmarSenhaRedefinicao.focus();
     } else {
@@ -448,23 +446,23 @@ function fnValidarAtualizacaoMaterial() {
 
     if (edicaoMaterial == "") {
         erroEdicaoMaterial.textContent = "O Material não pode ser vazio"
-        erroEdicaoMaterial.style.color = "#f16c79"
+        erroEdicaoMaterial.style.color = "#e7818b"
         inputEdicaoMaterial.classList.add("erro")
     } else if (edicaoMaterial.length < 5) {
         erroEdicaoMaterial.textContent = "Mínimo de 5 caracteres"
-        erroEdicaoMaterial.style.color = "#f16c79"
+        erroEdicaoMaterial.style.color = "#e7818b"
         inputEdicaoMaterial.classList.add("erro")
     } else if (edicaoMaterial.length > 20) {
         erroEdicaoMaterial.textContent = "Máximo de 20 caracteres"
-        erroEdicaoMaterial.style.color = "#f16c79"
+        erroEdicaoMaterial.style.color = "#e7818b"
         inputEdicaoMaterial.classList.add("erro")
     } else if (regexCaracteresEspeciais.test(edicaoMaterial)) {
         erroEdicaoMaterial.textContent = "O Material Não pode conter caracteres especiais"
-        erroEdicaoMaterial.style.color = "#f16c79"
+        erroEdicaoMaterial.style.color = "#e7818b"
         inputEdicaoMaterial.classList.add("erro")
     } else if (regexNumero.test(edicaoMaterial)) {
         erroEdicaoMaterial.textContent = "O Material Não pode conter números"
-        erroEdicaoMaterial.style.color = "#f16c79"
+        erroEdicaoMaterial.style.color = "#e7818b"
         inputEdicaoMaterial.classList.add("erro")
     } else {
         erroEdicaoMaterial.textContent = ""
@@ -480,23 +478,23 @@ function fnValidarCadastroMaterial() {
 
     if (cadMaterial == "") {
         erroMaterial.textContent = "O Material não pode ser vazio"
-        erroMaterial.style.color = "#f16c79"
+        erroMaterial.style.color = "#e7818b"
         inputCadMaterial.classList.add("erro")
     } else if (cadMaterial.length < 5) {
         erroMaterial.textContent = "Mínimo de 5 caracteres"
-        erroMaterial.style.color = "#f16c79"
+        erroMaterial.style.color = "#e7818b"
         inputCadMaterial.classList.add("erro")
     } else if (cadMaterial.length > 20) {
         erroMaterial.textContent = "Máximo de 20 caracteres"
-        erroMaterial.style.color = "#f16c79"
+        erroMaterial.style.color = "#e7818b"
         inputCadMaterial.classList.add("erro")
     } else if (regexCaracteresEspeciais.test(cadMaterial)) {
         erroMaterial.textContent = "O Material Não pode conter caracteres especiais"
-        erroMaterial.style.color = "#f16c79"
+        erroMaterial.style.color = "#e7818b"
         inputCadMaterial.classList.add("erro")
     } else if (regexNumero.test(cadMaterial)) {
         erroMaterial.textContent = "O Material Não pode conter números"
-        erroMaterial.style.color = "#f16c79"
+        erroMaterial.style.color = "#e7818b"
         inputCadMaterial.classList.add("erro")
     } else {
         erroMaterial.textContent = ""
@@ -512,19 +510,19 @@ function fnValidarEmailRedefinicao() {
 
     if (emailCadastro == "") {
         erroEmailCadastro.textContent = "O email não pode ser vazio"
-        erroEmailCadastro.style.color = "#f16c79"
+        erroEmailCadastro.style.color = "#e7818b"
         inputEmailCadastro.classList.add("erro")
     } else if (emailCadastro.length > 100) {
         erroEmailCadastro.textContent = "O email pode ter até 100 caracteres"
-        erroEmailCadastro.style.color = "#f16c79"
+        erroEmailCadastro.style.color = "#e7818b"
         inputEmailCadastro.classList.add("erro")
     } else if (emailCadastro.length < 20) {
         erroEmailCadastro.textContent = "O email deve ter no mínimo 20 caracteres"
-        erroEmailCadastro.style.color = "#f16c79"
+        erroEmailCadastro.style.color = "#e7818b"
         inputEmailCadastro.classList.add("erro")
     } else if (!regexEmail.test(emailCadastro)) {
         erroEmailCadastro.textContent = "Email Inválido, deve conter @ e ."
-        erroEmailCadastro.style.color = "#f16c79"
+        erroEmailCadastro.style.color = "#e7818b"
         inputEmailCadastro.classList.add("erro")
     } else {
         erroEmailCadastro.textContent = ""
@@ -544,14 +542,13 @@ function fnValidarSenhasCadastro() {
 
     if (SenhaValidar != confirmarSenhaValidar) {
         erroConfirmarSenhaCadastro.textContent = "As Senha não coincidem, verifique a senha e digite novamente"
-        erroConfirmarSenhaCadastro.style.color = "#f16c79"
+        erroConfirmarSenhaCadastro.style.color = "#e7818b"
         inputConfirmarSenhaCadastro.classList.add("erro")
         inputConfirmarSenhaCadastro.focus();
     } else {
         return true;
     }
 }
-
 
 function fnValidarEnvioFuncionario(event) {
     const validarFuncionario = fnValidarCadastroFuncionario();
@@ -611,16 +608,15 @@ function fnValidarEnvioCadastroPeso(event) {
     return true
 }
 
-
-function fnValidarLogin(event) { 
-    const validarEmail = fnValidarEmail(); 
+function fnValidarLogin(event) {
+    const validarEmail = fnValidarEmail();
     const validarSenha = fnValidarSenha();
 
 
-    if (!validarEmail || !validarSenha) { 
-        event.preventDefault(); 
+    if (!validarEmail || !validarSenha) {
+        event.preventDefault();
 
-        Swal.fire({ 
+        Swal.fire({
             icon: "error",
             title: "Oops...",
             text: "Preencha todos os campos corretamentes, antes de ser enviado",
@@ -652,7 +648,7 @@ function fnValidarNovaAtualizacaoFuncionario(event) {
     const validarEdicaoFunc = fnValidarAtualizacaoFuncionario();
 
     if (!validarEdicaoFunc) {
-        event.preventDefault(); 
+        event.preventDefault();
 
 
         Swal.fire({

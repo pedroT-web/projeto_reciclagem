@@ -12,7 +12,7 @@ function fnConfirmarDeletePeriodo() {
                 text: "Realmente deseja deletar este período?",
                 icon: "question",
                 showCancelButton: true,
-                confirmButtonColor: "#F7941E",
+                confirmButtonColor: "#006f3e",
                 cancelButtonColor: "#d33",
                 confirmButtonText: "Deletar",
                 cancelButtonText: "Cancelar"
@@ -41,7 +41,7 @@ function fnConfirmarDeleteRegistro() {
                 text: "Realmente deseja deletar este registro?",
                 icon: "question",
                 showCancelButton: true,
-                confirmButtonColor: "#F7941E",
+                confirmButtonColor: "#006f3e",
                 cancelButtonColor: "#d33",
                 confirmButtonText: "Deletar",
                 cancelButtonText: "Cancelar"
@@ -70,7 +70,7 @@ function fnConfirmarDeleteFuncionario() {
                 text: "Realmente deseja deletar este funcionario?",
                 icon: "question",
                 showCancelButton: true,
-                confirmButtonColor: "#F7941E",
+                confirmButtonColor: "#006f3e",
                 cancelButtonColor: "#d33",
                 confirmButtonText: "Deletar",
                 cancelButtonText: "Cancelar"
